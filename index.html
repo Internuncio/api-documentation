@@ -4,106 +4,214 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Hitblocks API Reference</title>
 
-    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
     <style>
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
-.highlight, .highlight .w {
-  color: #f8f8f2;
-  background-color: #272822;
-}
-.highlight .err {
-  color: #151515;
-  background-color: #ac4142;
-}
-.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
-  color: #505050;
-}
-.highlight .cp {
-  color: #f4bf75;
-}
-.highlight .nt {
-  color: #f4bf75;
-}
-.highlight .o, .highlight .ow {
-  color: #d0d0d0;
-}
-.highlight .p, .highlight .pi {
-  color: #d0d0d0;
-}
-.highlight .gi {
-  color: #90a959;
-}
-.highlight .gd {
-  color: #ac4142;
-}
 .highlight .gh {
-  color: #6a9fb5;
-  background-color: #151515;
-  font-weight: bold;
-}
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #aa759f;
-}
-.highlight .kc {
-  color: #d28445;
-}
-.highlight .kt {
-  color: #d28445;
-}
-.highlight .kd {
-  color: #d28445;
-}
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #90a959;
+  color: #999999;
 }
 .highlight .sr {
-  color: #75b5aa;
+  color: #f6aa11;
 }
-.highlight .si {
-  color: #8f5536;
+.highlight .go {
+  color: #888888;
 }
-.highlight .se {
-  color: #8f5536;
+.highlight .gp {
+  color: #555555;
 }
-.highlight .nn {
-  color: #f4bf75;
+.highlight .gs {
 }
-.highlight .nc {
-  color: #f4bf75;
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
 }
 .highlight .no {
-  color: #f4bf75;
+  color: #66d9ef;
 }
-.highlight .na {
-  color: #6a9fb5;
+.highlight .kt {
+  color: #66d9ef;
 }
-.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
-  color: #90a959;
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
 }
 .highlight .ss {
-  color: #90a959;
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
 }
     </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" />
+        <img src="images/navbar.png" alt="Navbar" />
       </span>
     </a>
     <div class="tocify-wrapper">
-      <img src="images/logo.png" />
+      <img src="images/logo.png" alt="Logo" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
+              <a href="#" data-language-name="shell">cURL</a>
+              <a href="#" data-language-name="ruby">Ruby</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -121,147 +229,185 @@
       <div class="content">
         <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to the Hitblocks API documentation! Our API is
+<a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> based. That means
+predictable resource-oriented URLs, which return HTTP response codes to
+indicate API errors.</p>
 
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
+<p>Responses are given in JSON format, which return both errors and data requested.</p>
 
 <h1 id="authentication">Authentication</h1>
 
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'hitblocks'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span> <span class="o">=</span> <span class="no">Hitblocks</span><span class="p">.</span><span class="nf">api_key</span> <span class="o">=</span> <span class="s2">"8641fb38-294a-41d9-9591-3449dfd99910"</span>
+</code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
+curl <span class="s2">"https://api.hitblocks.ai/v1/hitblocks"</span>
+  -u 8641fb38-294a-41d9-9591-3449dfd99910
 </code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
 <blockquote>
-<p>Make sure to replace <code class="prettyprint">meowmeowmeow</code> with your API key.</p>
+<p>Make sure to replace <code class="prettyprint">8641fb38-294a-41d9-9591-3449dfd99910</code> with your API key.</p>
 </blockquote>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+<p>Authentication is done using an API secret key in a given request. Manage API
+keys from your dashboard. API keys allow access to all functions of your account
+and should be kept secret. Do not put keys on publicly accessable Github
+repositories or in client-side code.</p>
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<p>Authentication is performed via HTTP Basic Auth. Provide your API key as the
+basic auth username value. You do not need to provide a password.</p>
 
-<p><code class="prettyprint">Authorization: meowmeowmeow</code></p>
+<p>Hitblocks expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+
+<p>All API requests will be made of HTTPS. Calls over plain HTTP will fail. API
+requests without authentication will also fail.</p>
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must replace <code>8641fb38-294a-41d9-9591-3449dfd99910</code> with your personal API key.
 </aside>
 
-<h1 id="kittens">Kittens</h1>
+          <h1 id="errors">Errors</h1>
 
-<h2 id="get-all-kittens">Get All Kittens</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p>Hitblocks uses conventional HTTP response codes to indicate the success or
+failure of an API request. Codes in 2xx range are successful, codes in the 4xx
+range indicate a user based error, and codes in 5xx range indicate an error on Hitblock&rsquo;s
+servers.</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<h2 id="error-codes">Error codes</h2>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
-
-<p>This endpoint retrieves all kittens.</p>
-
-<h3 id="http-request">HTTP Request</h3>
-
-<p><code class="prettyprint">GET http://example.com/api/kittens</code></p>
-
-<h3 id="query-parameters">Query Parameters</h3>
+<p>The Hitblocks API uses the following error codes:</p>
 
 <table><thead>
 <tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
+<th>Error Code</th>
+<th>Meaning</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td><strong>200 - OK</strong></td>
+<td>Everything worked as expected</td>
 </tr>
 <tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td><strong>400 - Bad Request</strong></td>
+<td>Your request sucks</td>
+</tr>
+<tr>
+<td><strong>401 - Unauthorized</strong></td>
+<td>Your API key is wrong</td>
+</tr>
+<tr>
+<td><strong>403 - Forbidden</strong></td>
+<td>The resource requested is not available for your account</td>
+</tr>
+<tr>
+<td><strong>404 - Not Found</strong></td>
+<td>The requested resource could not be found</td>
+</tr>
+<tr>
+<td><strong>405 - Method Not Allowed</strong></td>
+<td>You tried to access a resource with an invalid method</td>
+</tr>
+<tr>
+<td><strong>406 - Not Acceptable</strong></td>
+<td>You requested a format that isn&rsquo;t JSON</td>
+</tr>
+<tr>
+<td><strong>410 - Gone</strong></td>
+<td>The resource requested has been removed from our servers</td>
+</tr>
+<tr>
+<td><strong>429 - Too Many Requests</strong></td>
+<td>You&rsquo;re requesting too many resources at once! Slow down!</td>
+</tr>
+<tr>
+<td><strong>500 - Internal Server Error</strong></td>
+<td>We had a problem with our server. Try again later.</td>
+</tr>
+<tr>
+<td><strong>503 - Service Unavailable</strong></td>
+<td>We&rsquo;re temporarily offline for maintenance. Please try again later.</td>
 </tr>
 </tbody></table>
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
+<h2 id="error-types">Error types</h2>
 
-<h2 id="get-a-specific-kitten">Get a Specific Kitten</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p>There is also a body response that contains more detailed information about
+specific errors that you can look up here.</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<h3 id="errors">Errors</h3>
+
+<table><thead>
+<tr>
+<th>Types</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>api_connection_error</strong></td>
+<td>Failure to connect to Hitblock&rsquo;s API.</td>
+</tr>
+<tr>
+<td><strong>api_error</strong></td>
+<td>API errors cover any other type of problem (e.g., a temporary problem with Hitblock&rsquo;s servers) and are extremely uncommon.</td>
+</tr>
+<tr>
+<td><strong>authentication_error</strong></td>
+<td>Failure to properly authenticate yourself in the request.</td>
+</tr>
+<tr>
+<td><strong>invalid_request_error</strong></td>
+<td>Invalid request errors arise when your request has invalid parameters.</td>
+</tr>
+<tr>
+<td><strong>rate_limit_error</strong></td>
+<td>Too many requests hit the API too quickly.</td>
+</tr>
+<tr>
+<td><strong>validation_error</strong></td>
+<td>Errors triggtered by our interfaces when failing to validate incoming properties.</td>
+</tr>
+</tbody></table>
+
+<h2 id="handling-errors">Handling errors</h2>
+
+<p>Our API libraries will try to raise exceptions for any of the reasons above, but
+we recommend you write code that handles all possible API exceptions.</p>
+
+          <h1 id="hitblocks">Hitblocks</h1>
+
+<h2 id="get-hitblock">Get Hitblock</h2>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'hitblocks'</span>
+
+<span class="no">Hitblocks</span><span class="p">.</span><span class="nf">api_key</span><span class="p">(</span><span class="s1">'8641fb38-294a-41d9-9591-3449dfd99910'</span><span class="p">)</span>
+
+<span class="no">Hitblocks</span><span class="o">::</span><span class="no">Hitblocks</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="o">&lt;</span><span class="no">ID</span><span class="o">&gt;</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.hitblocks.ai/v1/hitblock/&lt;ID&gt;"</span> <span class="se">\</span>
+  -u 8641fb38-294a-41d9-9591-3449dfd99910
 </code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hitblock"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image-transcription"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Receipt Transcription"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"for transcribing bbq shop receipts"</span><span class="w">
+  </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="mi">1495230848</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"cost_per_item"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"total_spent"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.00</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"workers_per_item"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can&rsquo;t use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<p>This endpoint retrieves a specific hitblock.</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<p><code class="prettyprint">GET https://www.hitblocks.ai/v1/hitblock/&lt;ID&gt;</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -273,74 +419,392 @@ Remember — a happy kitten is an authenticated kitten!
 </thead><tbody>
 <tr>
 <td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>The ID of the hitblock to retrieve</td>
 </tr>
 </tbody></table>
 
-          <h1 id="errors">Errors</h1>
+<h2 id="list-hitblocks">List Hitblocks</h2>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'hitblocks'</span>
 
-<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the `includes` folder and add them to the top of your `index.md`&rsquo;s frontmatter. Files are included in the order listed.</aside>
+<span class="no">Hitblocks</span><span class="p">.</span><span class="nf">api_key</span><span class="p">(</span><span class="s1">'8641fb38-294a-41d9-9591-3449dfd99910'</span><span class="p">)</span>
 
-<p>The Kittn API uses the following error codes:</p>
+<span class="no">Hitblocks</span><span class="o">::</span><span class="no">Hitblocks</span><span class="p">.</span><span class="nf">list</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.hitblocks.ai/v1/hitblocks"</span> <span class="se">\</span>
+  -u 8641fb38-294a-41d9-9591-3449dfd99910
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hitblock"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image-transcription"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Receipt Transcription"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"for transcribing bbq shop receipts"</span><span class="w">
+    </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="mi">1495230848</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cost_per_item"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"total_spent"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.00</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"workers_per_item"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hitblock"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image-transcription"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Handwriting Transcription"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"for transcribing notes into digital copies"</span><span class="w">
+    </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="mi">1495230848</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cost_per_item"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.25</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"total_spent"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.00</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"workers_per_item"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all hitblocks.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.hitblocks.ai/v1/hitblocks</code></p>
+
+          <h1 id="items">Items</h1>
+
+<h2 id="list-all-items">List All Items</h2>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'hitblocks'</span>
+
+<span class="no">Hitblocks</span><span class="p">.</span><span class="nf">api_key</span><span class="p">(</span><span class="s1">'8641fb38-294a-41d9-9591-3449dfd99910'</span><span class="p">)</span>
+
+<span class="n">hitblock</span> <span class="o">=</span> <span class="no">Hitblocks</span><span class="o">::</span><span class="no">Hitblock</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="o">&lt;</span><span class="n">hitblock_id</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="n">hitblock</span><span class="p">.</span><span class="nf">items</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.hitblocks.ai/v1/hitblock/&lt;hitblock_id&gt;/items"</span> <span class="se">\</span>
+  -u 8641fb38-294a-41d9-9591-3449dfd99910
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"item"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="mi">1495230848</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cost"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"completed"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"params"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"image_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image of receipt1.jpg"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"responses"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"response"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+        </span><span class="s2">"approval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"response"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+        </span><span class="s2">"approval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rejected"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"item"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="mi">1495230905</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cost"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"completed"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"params"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"image_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image of receipt2.jpg"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"responses"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"response"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+        </span><span class="s2">"approval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"response"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+        </span><span class="s2">"approval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rejected"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all items in a given hitblock.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.hitblocks.ai/v1/hitblock/&lt;hitblock_id&gt;/items</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
 
 <table><thead>
 <tr>
-<th>Error Code</th>
-<th>Meaning</th>
+<th>Parameter</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>400</td>
-<td>Bad Request &ndash; Your request sucks</td>
+<td><strong>hitblock_id</strong></td>
+<td>The ID of the hitblock to get items from.</td>
+</tr>
+</tbody></table>
+
+<h2 id="get-an-item">Get an Item</h2>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'hitblocks'</span>
+
+<span class="no">Hitblocks</span><span class="p">.</span><span class="nf">api_key</span><span class="p">(</span><span class="s1">'8641fb38-294a-41d9-9591-3449dfd99910'</span><span class="p">)</span>
+
+<span class="no">Hitblocks</span><span class="o">::</span><span class="no">Item</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="n">item_id</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.hitblocks.ai/v1/item/&lt;ID&gt;"</span> <span class="se">\</span>
+  -u 8641fb38-294a-41d9-9591-3449dfd99910
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"item"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="mi">1495230848</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"cost"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"completed"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"params"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"image_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image of receipt1.jpg"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"responses"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"response"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+      </span><span class="s2">"approval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"response"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+      </span><span class="s2">"approval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rejected"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific item.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://www.hitblocks.ai/v1/item/&lt;ID&gt;</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>ID</strong></td>
+<td>The ID of the item to retrieve</td>
+</tr>
+</tbody></table>
+
+<h2 id="create-an-item">Create an Item</h2>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'hitblocks'</span>
+
+<span class="no">Hitblocks</span><span class="p">.</span><span class="nf">api_key</span><span class="p">(</span><span class="s1">'8641fb38-294a-41d9-9591-3449dfd99910'</span><span class="p">)</span>
+
+<span class="n">hitblock</span> <span class="o">=</span> <span class="no">Hitblocks</span><span class="o">::</span><span class="no">Hitblock</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="o">&lt;</span><span class="n">hitblock_id</span><span class="o">&gt;</span><span class="p">)</span>
+
+<span class="no">Hitblocks</span><span class="o">::</span><span class="no">Item</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span>
+    <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="s2">"image"</span><span class="p">,</span>
+    <span class="ss">:hitblock</span> <span class="o">=&gt;</span> <span class="n">hitblock</span><span class="p">,</span>
+    <span class="ss">:image_url</span> <span class="o">=&gt;</span> <span class="s2">"http://www.images.com/my-image.jpg"</span><span class="p">,</span>
+    <span class="ss">:description</span> <span class="o">=&gt;</span> <span class="s2">"My image from personal website"</span>
+<span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.hitblocks.ai/v1/hitblocks/&lt;hitblock_id&gt;/items"</span> <span class="se">\</span>
+  -u 8641fb38-294a-41d9-9591-3449dfd99910 <span class="se">\</span>
+  -d <span class="nb">type</span><span class="o">=</span><span class="s2">"image"</span> <span class="se">\</span>
+  -d <span class="nv">image_url</span><span class="o">=</span><span class="s2">"http://www.images.com/my-image.jpg"</span> <span class="se">\</span>
+  -d <span class="nv">description</span><span class="o">=</span><span class="s2">"My image from personal website"</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"item"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="mi">1495231005</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"cost"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"completed"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"params"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"image_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.images.com/my-image.jpg"</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"My image from personal website"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"responses"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint creates a specific item.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://www.hitblocks.ai/v1/hitblocks/&lt;hitblock_id&gt;/items</code></p>
+
+<h3 id="arguments">Arguments</h3>
+
+<table><thead>
+<tr>
+<th>Arguments</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>type</strong></td>
+<td>yes</td>
+<td>The type of item, for verification against allowed hitblock inputs.</td>
 </tr>
 <tr>
-<td>401</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
+<td><strong>hitblock_id</strong></td>
+<td>yes</td>
+<td>the ID of the hitblock the item should be placed in.</td>
 </tr>
 <tr>
-<td>403</td>
-<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
+<td><strong>image_url</strong></td>
+<td>yes</td>
+<td>a parameter for the &ldquo;image&rdquo; item that points to the hosted image.</td>
 </tr>
 <tr>
-<td>404</td>
-<td>Not Found &ndash; The specified kitten could not be found</td>
+<td><strong>description</strong></td>
+<td>no</td>
+<td>an optional string. Useful for displaying information to users.</td>
 </tr>
+</tbody></table>
+
+<h2 id="delete-an-item">Delete an Item</h2>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'hitblocks'</span>
+
+<span class="no">Hitblocks</span><span class="p">.</span><span class="nf">api_key</span><span class="p">(</span><span class="s1">'8641fb38-294a-41d9-9591-3449dfd99910'</span><span class="p">)</span>
+
+<span class="n">item</span> <span class="o">=</span> <span class="no">Hitblocks</span><span class="o">::</span><span class="no">Item</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="o">&lt;</span><span class="no">ID</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="n">item</span><span class="p">.</span><span class="nf">delete</span>
+
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.hitblocks.ai/v1/item/&lt;ID&gt;"</span> <span class="se">\</span>
+  -u 8641fb38-294a-41d9-9591-3449dfd99910 <span class="se">\</span>
+  -X DELETE
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"deleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;ID&gt;"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint deletes a specific item. </p>
+
+<aside class="notice">
+<ul>
+  <li>
+    If an item is posted already then it is canceled and unspent credits are refunded.
+  </li>
+<li>
+ Items that have already been answered will not be refunded, and will still be available through a direct GET request.
+</li>
+<li>
+Deleted items will not show up when being listed unless specifically requested.
+</li>
+</ul>
+</aside>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://www.hitblocks.ai/v1/item/&lt;ID&gt;</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
 <tr>
-<td>405</td>
-<td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
+<th>Parameter</th>
+<th>Description</th>
 </tr>
+</thead><tbody>
 <tr>
-<td>406</td>
-<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+<td><strong>ID</strong></td>
+<td>The ID of the item to be deleted.</td>
 </tr>
+</tbody></table>
+
+<h2 id="post-an-item">Post an Item</h2>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'hitblocks'</span>
+
+<span class="no">Hitblocks</span><span class="p">.</span><span class="nf">api_key</span><span class="p">(</span><span class="s1">'8641fb38-294a-41d9-9591-3449dfd99910'</span><span class="p">)</span>
+
+<span class="n">item</span> <span class="o">=</span> <span class="no">Hitblocks</span><span class="o">::</span><span class="no">Item</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="o">&lt;</span><span class="no">ID</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="n">item</span><span class="p">.</span><span class="nf">post</span>
+
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.hitblocks.ai/v1/item/&lt;ID&gt;/post"</span> <span class="se">\</span>
+  -u 8641fb38-294a-41d9-9591-3449dfd99910 <span class="se">\</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HIT"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"www.google.ca"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"service"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AMT"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"published"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="mi">1495230848</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"item"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="mi">1495230848</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cost"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"published"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"params"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"image_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image of receipt1.jpg"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"responses"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint posts a specific item to crowdsourced workers on <a href="https://www.mturk.com/mturk/welcome">Amazon Mechanical Turk</a></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://www.hitblocks.ai/v1/item/&lt;ID&gt;/post</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
 <tr>
-<td>410</td>
-<td>Gone &ndash; The kitten requested has been removed from our servers</td>
+<th>Parameter</th>
+<th>Description</th>
 </tr>
+</thead><tbody>
 <tr>
-<td>418</td>
-<td>I&rsquo;m a teapot</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests &ndash; You&rsquo;re requesting too many kittens! Slow down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error &ndash; We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable &ndash; We&rsquo;re temporarially offline for maintanance. Please try again later.</td>
+<td><strong>ID</strong></td>
+<td>The ID of the item to be deleted.</td>
 </tr>
 </tbody></table>
 
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
+                <a href="#" data-language-name="shell">cURL</a>
+                <a href="#" data-language-name="ruby">Ruby</a>
           </div>
       </div>
     </div>
