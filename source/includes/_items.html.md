@@ -21,7 +21,7 @@ curl "https://api.hitblocks.ai/v1/hitblock/<hitblock_id>/items" \
 ```json
 {
   "object": "list",
-  "url": "v1/hitblock/<hitblock_id>/items",
+  "url": "/v1/hitblock/<hitblock_id>/items",
   "data": [
     {
       "object": "item",

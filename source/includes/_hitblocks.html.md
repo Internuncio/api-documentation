@@ -65,7 +65,7 @@ curl "https://api.hitblocks.ai/v1/hitblocks" \
 ```json
 {
   "object": "list",
-  "url": "v1/hitblocks",
+  "url": "/v1/hitblocks",
   "data": [
     {
       "object": "hitblock",
