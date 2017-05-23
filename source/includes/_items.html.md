@@ -125,12 +125,12 @@ curl "https://api.hitblocks.ai/v1/item/<ID>" \
     {
       "object": "response",
       "data": {...},
-      "approval": "approved"
+      "approved": "true"
     },
     {
       "object": "response",
       "data": {...},
-      "approval": "rejected"
+      "approved": "false"
     }
   ]
 }
