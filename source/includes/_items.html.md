@@ -19,58 +19,62 @@ curl "https://api.hitblocks.ai/v1/hitblock/<hitblock_id>/items" \
 > The above command returns JSON structured like this:
 
 ```json
-[
-  {
-    "object": "item",
-    "id": 2,
-    "type": "image",
-    "created": 1495230848,
-    "cost": 0.10,
-    "currency": "usd",
-    "status": "completed",
-    "params": {
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg",
-      "description": "image of receipt1.jpg"
-    },
-    "responses": [
-      {
-        "object": "response",
-        "data": {...},
-        "approval": "approved"
+{
+  "object": "list",
+  "url": "v1/hitblock/<hitblock_id>/items",
+  "data": [
+    {
+      "object": "item",
+      "id": 2,
+      "type": "image",
+      "created": 1495230848,
+      "cost": 0.10,
+      "currency": "usd",
+      "status": "completed",
+      "params": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg",
+        "description": "image of receipt1.jpg"
       },
-      {
-        "object": "response",
-        "data": {...},
-        "approval": "rejected"
-      }
-    ]
-  },
-  {
-    "object": "item",
-    "id": 3,
-    "type": "image",
-    "created": 1495230905,
-    "cost": 0.10,
-    "currency": "usd",
-    "status": "completed",
-    "params": {
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg",
-      "description": "image of receipt2.jpg"
+      "responses": [
+        {
+          "object": "response",
+          "data": {...},
+          "approved": "false"
+        },
+        {
+          "object": "response",
+          "data": {...},
+          "approved": "true"
+        }
+      ]
     },
-    "responses": [
-      {
-        "object": "response",
-        "data": {...},
-        "approval": "approved"
+    {
+      "object": "item",
+      "id": 3,
+      "type": "image",
+      "created": 1495230905,
+      "cost": 0.10,
+      "currency": "usd",
+      "status": "completed",
+      "params": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg",
+        "description": "image of receipt2.jpg"
       },
-      {
-        "object": "response",
-        "data": {...},
-        "approval": "rejected"
-      }
-    ]
-  }
-]
+      "responses": [
+        {
+          "object": "response",
+          "data": {...},
+          "approved": "false"
+        },
+        {
+          "object": "response",
+          "data": {...},
+          "approved": "true"
+        }
+      ]
+    }
+  ]
+}
 ```
 
 This endpoint retrieves all items in a given hitblock.

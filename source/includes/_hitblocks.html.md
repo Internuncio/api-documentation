@@ -63,32 +63,34 @@ curl "https://api.hitblocks.ai/v1/hitblocks" \
 > The above command returns JSON structured like this:
 
 ```json
-[
-  {
-    "object": "hitblock",
-    "id": 4,
-    "type": "image-transcription",
-    "title": "Receipt Transcription",
-    "description": "for transcribing bbq shop receipts"
-    "created": 1495230848,
-    "cost_per_item": 0.10,
-    "total_spent": 2.00,
-    "workers_per_item": 1,
-    "currency": "usd"
-  },
-  {
-    "object": "hitblock",
-    "id": 5,
-    "type": "image-transcription",
-    "title": "Handwriting Transcription",
-    "description": "for transcribing notes into digital copies"
-    "created": 1495230848,
-    "cost_per_item": 0.25,
-    "total_spent": 10.00,
-    "workers_per_item": 1,
-    "currency": "usd"
-  }
-]
+{
+  "object": "list",
+  "url": "v1/hitblocks",
+  "data": [
+    {
+      "object": "hitblock",
+      "id": 4,
+      "type": "image-transcription",
+      "title": "Receipt Transcription",
+      "description": "for transcribing bbq shop receipts"
+      "created": 1495230848,
+      "cost_per_item": 0.10,
+      "workers_per_item": 1,
+      "currency": "usd"
+    },
+    {
+      "object": "hitblock",
+      "id": 5,
+      "type": "image-transcription",
+      "title": "Handwriting Transcription",
+      "description": "for transcribing notes into digital copies"
+      "created": 1495230848,
+      "cost_per_item": 0.25,
+      "workers_per_item": 1,
+      "currency": "usd"
+    }
+  ]
+}
 ```
 
 This endpoint retrieves all hitblocks.
